@@ -1,0 +1,16 @@
+.btn {
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    width: 120px;
+    color: $black;
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+.orange {
+    border-color: $orange;
+    background: $orange;
+    color: $white;
+}

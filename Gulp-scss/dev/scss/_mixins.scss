@@ -1,0 +1,4 @@
+@mixin container($w, $mw) {
+    max-width: $mw;
+    width: $w;
+}

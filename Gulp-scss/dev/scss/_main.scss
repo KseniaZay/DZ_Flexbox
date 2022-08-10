@@ -1,0 +1,38 @@
+.content {
+    padding: 100px 0;
+} h1 {
+    font-weight: 600;
+    font-size: 65px;
+    font-style: normal;
+    line-height: 70px;
+    p {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+.box-img {
+   background: url(../images/big1.svg);
+   width: 759px;
+   height: 529px;
+}
+.orang-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: $peach;
+    h2 {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+    }
+.logos {
+    display: flex;
+    li {
+        padding: 10px 40px;
+        list-style: none;
+    }
+}
+}
