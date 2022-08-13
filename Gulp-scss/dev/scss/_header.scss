@@ -1,4 +1,6 @@
-
+.head {
+    border-bottom: 2px solid $gray;
+}
 .logo > img{
     width: 15px;
     height: 15px;
@@ -28,6 +30,7 @@ nav {
 }
 .box-button {
     display: flex;
+    padding: 15px 0;
     a {
         text-decoration: none;
         text-align: center;
