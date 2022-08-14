@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     @include container (100%, 1440px);
-    min-height: 95px;
+    height: auto;
     background: $white;
     margin: 0 auto;
     padding: 0 20px;
@@ -24,10 +24,8 @@ body {
 }
 .blue {
     background: $blue;
-    min-height: 468px;
 }
 .brown {
-    min-height: 332px;
     background: $brown;
 }
 

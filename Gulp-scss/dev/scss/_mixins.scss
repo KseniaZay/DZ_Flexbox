@@ -57,5 +57,20 @@
     font-size: $s;
     line-height: $h;   
 }
+@mixin case ($w, $s, $h){
+    font-weight: $w;
+    font-size: $s;
+    line-height: $h;
+}
+@mixin list ($w, $s, $h){
+    font-weight: $w;
+    font-size: $s;
+    line-height: $h;
+}
+@mixin lists ($w, $s, $h){
+    font-weight: $w;
+    font-size: $s;
+    line-height: $h;
+}
 
 
