@@ -1,11 +1,11 @@
 .content {
     padding: 100px 10px;
     h1 {
-        @include content(600, 65px, 70px);
+        @include text(600, 65px, 70px);
         padding: 30px 0;
     }
     p {
-        @include contentSmall(400, 25px, 35px);
+        @include text(400, 25px, 35px);
     }    
 }
 .box-img {
@@ -20,15 +20,15 @@
     h2 {
         @include text(600, 50px, 60px);
     }
+}
 .logos {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     li {
         padding: 30px 15px;
         list-style: none;
     }
-}
 }
 .double {
     display: flex;
@@ -38,7 +38,22 @@
         @include text(600, 50px, 60px);
     }
     p {
-        @include textSmall(400, 20px, 30px);  
+        @include text(400, 20px, 30px);  
+        a {
+            text-decoration: underline;
+        } 
+    }
+}
+.double-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 90px 75px;
+    h3 {
+        @include text(600, 50px, 60px);
+    }
+    p {
+        @include text(400, 20px, 30px);  
         a {
             text-decoration: underline;
         } 
@@ -48,7 +63,7 @@
     padding: 100px 50px;
     width: 50%;
     a {
-        @include textlink (600, 20px, 30px);
+        @include text(600, 20px, 30px);
         text-decoration: none;
         color: $black;
         &:hover {
@@ -63,7 +78,6 @@
     width: 50%;
 }
 .code {
-    
     margin: 166px 66px;
     width: 500px;
     height: 300px;
@@ -76,8 +90,8 @@
     height: auto;
     padding: 100px 0;
     h3 {
-        text-align: center;
         @include text(600, 50px, 60px);
+        text-align: center;
     }   
 }
 .localise {
@@ -90,10 +104,10 @@
         list-style: none;
         text-align: center;
         h4 {
-            @include txt(600, 25px, 35px);
+            @include text(600, 25px, 35px);
         }
-        p {
-            @include txtSmall (400, 18px, 25px);
+        span {
+            @include text(400, 18px, 25px);
         }
     }
 }
@@ -105,11 +119,11 @@
         padding: 20px;
         text-align: left;
         h4 {
-            @include txtbig(400, 30px, 40px);
+            @include text(400, 30px, 40px);
         }
         a {
+            @include text(400, 20px, 30px);
             color: $black;
-            @include textSmall(400, 20px, 30px);
             &:hover {
                 color: $orange;
             }
@@ -120,9 +134,9 @@
     display: flex;
     padding: 20px 75px;
     blockquote {
-        @include txtbig(400, 30px, 40px);
+        @include text(400, 30px, 40px);
         p {
-            @include textSmall(400, 15px, 25px);
+            @include text(400, 15px, 25px);
         }
     }
 }
@@ -143,11 +157,12 @@
         padding-right: 30px;
     }
     p {
-        @include cake(600, 35px, 50px);
+        @include text(600, 35px, 50px);
         padding: 0 200px 0 0;
     }
 }
 .stars {
+    display: flex;
     padding-left: 20px;
     border-left: 1px solid $black;
     img {
@@ -165,10 +180,10 @@
     width: 100%;
     text-align: center;
     h1 {
-        @include content(600, 65px, 70px);
+        @include text(600, 65px, 70px);
     }
     p {
-        @include chicken(400, 25px, 30px);
+        @include text(400, 25px, 30px);
     }
     img {
         max-width: 100%;
@@ -176,8 +191,10 @@
         margin-bottom: 30px;
     }
 }
-.center-box > a {
-    text-decoration: none;
+.center-box {
+    a {
+        text-decoration: none;
+    }
 }
 .easy {
     min-height: 603px;

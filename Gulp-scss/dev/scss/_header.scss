@@ -1,12 +1,16 @@
 .head {
     border-bottom: 2px solid $gray;
 }
-.logo > img{
-    max-width: 100%;
-    height: auto;
+.logo  {
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+} 
+.logo {
+    a :hover  {
+       transform: scale(1.1);
 }
-.logo > a :hover  {
-    transform: scale(1.1);
 }
 nav {
     flex-grow: 1;

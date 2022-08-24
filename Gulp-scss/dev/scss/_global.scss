@@ -1,6 +1,6 @@
 body {
     background: $gray;
-    font-family: graphik_lcgregular;
+    font-family: graphik_lcgregular, Arial, Helvetica, sans-serif;
 }
 #wrapper {
     position: relative;
@@ -10,7 +10,7 @@ body {
 .container {
     display: flex;
     align-items: center;
-    @include container (100%, 1440px);
+    width: 100%;
     height: auto;
     background: $white;
     margin: 0 auto;
