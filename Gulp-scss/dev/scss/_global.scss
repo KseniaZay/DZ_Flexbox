@@ -1,5 +1,5 @@
 body {
-    background: $gray;
+    background: $white;
     font-family: graphik_lcgregular, Arial, Helvetica, sans-serif;
 }
 #wrapper {
@@ -10,6 +10,7 @@ body {
 .container {
     display: flex;
     align-items: center;
+    max-width: 1440px;
     width: 100%;
     height: auto;
     background: $white;
