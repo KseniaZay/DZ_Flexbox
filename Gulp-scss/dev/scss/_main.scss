@@ -1,42 +1,96 @@
-.content {
-    padding: 100px 10px;
-    h1 {
-        @include text(600, 65px, 70px);
-        padding: 30px 0;
+.main-first {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    background: $white;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (min-width: 768px) {
+        flex-direction: row;
     }
-    p {
-        @include text(400, 25px, 35px);
-    }    
+}    
+.content {
+    @include text(400, 25px, 35px);
+    width: 45%;
+    padding: 10px 10px;
+    @media (min-width: 768px){
+        padding: 100px 10px;
+    }
+    h1 {
+        font-weight: 600px;
+        font-size: 40px;
+        line-height: calc(70/65);
+        padding: 30px 0;
+        @media (min-width: 992px) {
+            font-size: 40px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 50px;
+        }
+        @media (min-width: 1440px) {
+            font-size: 65px;
+        }
+    }  
 }
 .box-img {
-    padding: 30px 0;
-    background: $white;
-    max-width: 759px;
-    height: 529px;
-}
+        padding: 30px 0;
+        width: 55%;
+        img {
+            max-width: 100%;
+        }
+    }
 .orang-box {
     padding: 50px 0;
     text-align: center;
     width: 100%;
     h2 {
-        @include text(600, 50px, 60px);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: calc(60/50);
+        @media (min-width: 992px) {
+            font-size: 40px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 50px;
+        }
     }
 }
 .logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     li {
         list-style: none;
+        padding: 10px;
+    }
+    @media (min-width: 768px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 .double {
-    @include text(400, 20px, 30px);  
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(30/20);
     display: flex;
-    width: 100%;
-    margin: 90px 50px;
+    max-width: 100%;
+    margin: 30px 50px;
+    @media (min-width: 768px) {
+        font-size: 20px;
+        margin: 80px 50px;
+    }
     h3 {
-        @include text(600, 50px, 60px);
+        font-weight: 600;
+        font-size: 25px;
+        line-height: calc(60/50);
+        @media (min-width: 768px) {
+            font-size: 35px;
+        }
+        @media (min-width: 992px) {
+            font-size: 50px;
+        }   
     }
     p {
         a {
@@ -45,13 +99,27 @@
     }
 }
 .double-reverse {
-    @include text(400, 20px, 30px);  
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    margin: 90px 75px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(30/20); 
+    max-width: 100%;
+    margin: 30px 50px;
+    @media (min-width: 768px) {
+        font-size: 20px;
+        margin: 80px 50px;
+    }
     h3 {
-        @include text(600, 50px, 60px);
+        font-weight: 600;
+        font-size: 25px;
+        line-height: calc(60/50);
+        @media (min-width: 768px) {
+            font-size: 35px;
+        }
+        @media (min-width: 992px) {
+            font-size: 50px;
+        }   
     }
     p {
         a {
@@ -60,10 +128,18 @@
     }
 }
 .text {
-    padding: 100px 50px;
+    padding: 30px 50px;
     width: 50%;
+    @media (min-width: 768px){
+        padding: 20px 50px;
+    }
+    @media (min-width: 992px){
+        padding: 50px 50px;
+    }
     a {
-        @include text(600, 20px, 30px);
+        @media (min-width: 768px){
+            font-size: 20px;
+        }
         text-decoration: none;
         color: $black;
         &:hover {
@@ -72,15 +148,25 @@
     }
 }
 .img {
-    background: $champagne;
-    max-width: 100%;
     height: auto;
     width: 50%;
+    img {
+        max-width: 100%;
+    }
+}
+.img-bcg {
+    background: $champagne;
 }
 .code {
-    margin: 166px 66px;
-    width: 500px;
-    height: 300px;
+    margin: 98px 50px;
+    max-width: 500px;
+    max-height: 300px;
+    @media (min-width: 768px) {
+        margin: 98px 66px;
+    }
+    @media (min-width: 992px) {
+        margin: 166px 66px;
+    }
     p {
         padding: 0 50px;
     }
@@ -90,19 +176,29 @@
     height: auto;
     padding: 100px 0;
     h3 {
-        @include text(600, 50px, 60px);
+        font-weight: 600;
+        font-size: 25px;
+        line-height: calc(60/50);
         text-align: center;
+        @media (min-width: 768px) {
+            font-size: 35px;
+        }
+        @media (min-width: 992px) {
+            font-size: 50px;
+        }
     }   
 }
 .localise {
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     li {
         padding: 15px;
-        width: calc(100%/3);
+        width: calc(100%/2);
         list-style: none;
         text-align: center;
+        @media (min-width: 992px) {
+            width: calc(100%/3);
+        }
         h4 {
             @include text(600, 25px, 35px);
         }
@@ -119,7 +215,12 @@
         padding: 20px;
         text-align: left;
         h4 {
-            @include text(400, 30px, 40px);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: calc(40/30);
+            @media (min-width: 768px){
+                font-size: 30px;
+            }
         }
         a {
             @include text(400, 20px, 30px);
@@ -131,27 +232,46 @@
     }
 }
 .quote {
-    @include text(400, 15px, 25px);
     display: flex;
     padding: 20px 75px;
     blockquote {
-        @include text(400, 30px, 40px);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: calc(40/30);
+        @media (min-width: 768px){
+            font-size: 20px;
+        }
+        @media (min-width: 992px){
+            font-size: 30px;
+        }
     }
 }
 .img-quote {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 25px 0;
-}
-.cake-stars {
-    display: flex;
-    padding: 50px 75px;
-}
-.cake {
-    @include text(600, 35px, 50px);
-    display: flex;
     img {
         max-width: 100%;
+    }
+}
+.cake-stars {
+    padding: 50px 75px;
+    @media (min-width: 992px){
+        display: flex;
+    }
+}
+.cake {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(50/35);
+    display: flex;
+    @media (min-width: 768px){
+        font-size: 27px;
+    }
+    @media (min-width: 992px){
+        font-size: 35px;
+    }
+    img {
         height: auto;
         padding-right: 30px;
     }
@@ -161,8 +281,16 @@
 }
 .stars {
     display: flex;
-    padding-left: 20px;
-    border-left: 1px solid $black;
+    padding-left: 10px;
+    border-top: 1px solid $black;
+    @media (min-width: 768px){
+        border-top: 1px solid $black;
+        padding-left: 30px;
+    }
+    @media (min-width: 992px){
+        border-top: none;
+        border-left: 1px solid $black;
+    }
     img {
         max-width: 100%;
         height: auto;
@@ -175,11 +303,16 @@
     flex-direction: column;
     align-items: center;
     padding: 165px 0;
-    min-height: 1099px;
     width: 100%;
     text-align: center;
     h1 {
-        @include text(600, 65px, 70px);
+        font-weight: 600;
+        font-size: 50px;
+        line-height: calc(75/65);
+        @media (min-width: 768px){
+            font-weight: 600;
+            font-size: 65px;
+        }
     }
     img {
         max-width: 100%;
@@ -193,7 +326,6 @@
     }
 }
 .easy {
-    min-height: 603px;
     h1 {
         margin: 50px 0;
     }
